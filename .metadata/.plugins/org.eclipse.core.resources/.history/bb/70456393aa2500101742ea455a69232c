@@ -1,0 +1,44 @@
+package com.ust;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * 
+ */
+public class AccountEvaluation {
+	/**
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int[] input = { 1111, 9999, 1234, 5678, 9091 };
+
+		List<Integer> list = getSumOfDigitsEachElement(input);
+		System.out.println(list);
+		int totalDigitSum = getTotalDigitSum(input);
+	}
+
+	private static int getTotalDigitSum(int[] input) {
+
+		return 0;
+	}
+
+	private static List<Integer> getSumOfDigitsEachElement(int[] input) {
+
+		List<Integer> list = new ArrayList<>();
+		int sum = 0;
+		for (int num : input) {
+			while (num > 0) {
+				int rem = num % 10;
+				sum = +rem;
+				list.add(sum);
+				num /=10;
+			}
+		}
+
+		return list;
+
+	}
+
+}

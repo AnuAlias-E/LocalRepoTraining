@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;OddNumberChecker.java&apos; to &apos;com.training.model.Calculator.java&apos;&#x0D;&#x0A;- Original project: &apos;116-Unit Testing&apos;&#x0D;&#x0A;- Destination element: &apos;com.training.model.Calculator.java&apos;&#x0D;&#x0A;- Original element: &apos;com.training.model.tests.OddNumberChecker.java&apos;" description="Copy compilation unit" destination="/src&lt;com.training.model{Calculator.java" element1="/src&lt;com.training.model.tests{OddNumberChecker.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1741845537806" units="1" version="1.0"/>
+</session>

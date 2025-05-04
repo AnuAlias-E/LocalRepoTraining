@@ -1,0 +1,7 @@
+1744008999804	Extract local variable 'charArray'
+1744009933038	Extract local variable 'list'
+1744010662136	Extract local variable 'list'
+1744014652888	Extract local variable 'collect'
+1744047265463	Rename method 'sortStringsBasedonLength'
+1744047739665	Extract local variable 'entrySet'
+1744390696685	Extract local variable 'charArray'

@@ -1,0 +1,16 @@
+package com.training.linkedlist;
+
+class ListNode {
+	int val;
+	ListNode next;
+
+	ListNode(int x) {
+		val = x;
+	}
+}
+
+public class LinkedListNode {
+	public void deleteNode(ListNode node) {
+
+	}
+}

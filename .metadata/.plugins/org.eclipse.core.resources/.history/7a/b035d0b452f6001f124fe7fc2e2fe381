@@ -1,0 +1,21 @@
+package com.arrays.problem;
+
+import java.util.Arrays;
+import java.util.stream.IntStream;
+
+public class MissingNumber {
+   public static int missingNumber(int arr[]) {
+	   int n=arr.length;
+	int total=IntStream.rangeClosed(1, n).sum();
+	int arraySum=Arrays.stream(arr).sum();
+		return total-arraySum;
+    	
+    }
+
+public static void main(String[] args) {
+	int arr[] = {1, 2, 3, 5};
+	
+	missingNumber(arr);
+
+}
+}
