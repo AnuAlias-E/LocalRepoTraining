@@ -1,0 +1,271 @@
+Literal Values
+
+Data Types
+
+	-Primitive Data Types (Built In)
+		Numeric
+		-------
+
+		Integer type (numeric data without precision)
+		----------------
+		byte   (1 byte= 8 bits 1 bit will be used as sign bit, 7 bits for the value)
+		short  (2 bytes= 16 bits 1 bit will be used as sign bit, 15 bits for the value)
+		int  (4 bytes= 32 bits 1 bit will be used as sign bit, 31 bits for the value)
+		long (8 bytes= 64 bits 1 bit will be used as sign bit, 63 bits for the value)
+		char   (2 bytes= 16 bits , 16 bits for the value)
+
+		Floating type  (numeric data without precision)
+		-------------
+		float  (4 bytes= 32 bits , place for real, mantisa, exponent)
+		double (8 bytes= 64 bits , place for real, mantisa, exponent)
+
+		Non Numeric 
+		------------
+		boolean	(1 bit, true or false)	
+
+	-Abstract Data Types
+		Circle, Square, Employee, Student, BankAccount
+Operators
+=========
+
+	Arithmetic
+	============
+	+, - , * / % 
+		Compound Operators
+			+=, -=, *=, /=, %=
+		Unary Operators
+			++, --
+
+	Relational
+	=======================
+	
+	<,  <=, >, >=, ==, !=
+
+	Logical Operators
+	=======================
+
+	& (Logical and), && (short circuit and) , | (Logical or) , || (short circuit or) , ! (not)
+
+Variables
+----------
+
+	local variables
+	instance variables
+	Global Variables
+	Parameter Variables
+
+Naming Rules
+------------
+	1. Name should contain at least one character
+	2. There is no limit for maximum number of characters
+	3. Name can contain digits, but should not with a digit
+	4. Name cannot contain special characters such as ?, .
+	5. Name can contain $ and _
+	6. Names are case sensitive
+	7. Names cannot contain a space
+	8. Name can contain Unicode characters
+	
+	Type Conversions
+----------------
+	primitive data type variables
+		-Widening conversion
+		-Narrow conversion
+	
+	Single Mode Expressions
+	Multi Mode Expressions
+	Expressions that involve byte, short - Result is int
+
+Control Flow Statements
+------------------------
+	
+	-	Sequential
+	- 	Selection construct
+			if
+			if ..else
+			if else if ...else if.......else
+			switch...case
+				switch variable/expression - byte, short, int, char, String
+				
+	-	Loop
+
+			while... loop
+			do...while loop
+			for loop
+			
+			Array
+-----------------
+
+	declare an array variable
+	create an array (initialization) (memory allocation)
+	default values
+
+	size of array (length)
+	access elements
+
+	Iterate array elements (traditional for loop, modern for each)
+
+	nullify array (Deallocation of memory, GC)
+
+	The size of the array should be zero or a positive number
+
+	ArrayIndexOutOfBoundsException
+	NegativeArraySizeException
+	NullPointerException
+	
+	OOPS 
+-----
+	Abstraction
+
+	static variables/ static methods
+
+	Encapsulation
+		private 
+		setters/getters
+
+	Constructor Method
+		Explicit Constructor
+		Implicit Constructor (Default constructor)
+		constructor overloading
+
+	declaration of instance variables
+	declaration of static variable (global)
+
+	static methods
+	non static methods(instance methods)
+	constructor methods
+1. Instance method
+		can access instance variable
+		can call instance method
+		can access static variable
+		can call static methods
+		cannot call constructor methods
+		it can create object using the constructor method (new)
+	2. Static method
+		can not access instance variable
+		can not call instance method
+		can access static variable
+		can call static methods
+		cannot call constructor methods
+		it can create object using the constructor method(new)
+	3. Constructor method
+		can access instance variable
+		can call instance method
+		can access static variable
+		can call static methods
+		can call constructor method (this()) in line 1
+		
+
+		
+	Inheritance
+	Polymorphism
+	
+	Access Modifiers
+	----------------------
+		private 
+		protected
+		public
+
+		private 
+			default
+				protected
+					public
+
+	Constructor Chaining
+	-------------------------
+			this()
+			super()
+
+	Method Overriding
+	------------------
+
+		Rules:
+		1.	Overriding method should not reduce the access level of the method which it overrides, it can keep 			same access level or increase access level
+		2.	Private methods can be redefined in sub classes, but that is not considered as overriding (private 			methods cannot be overridden).
+		3.	Static methods inherited from super class, can be redefined, but not considered as overriding.(static 			methods cannot be overridden.
+		4.	Static methods are inherited from super class, you cannot redefine a static methods as instance 			methods. (and vice versa)
+		5.	Constructor methods cannot be overridden.
+		6.	final methods cannot be overridden.
+
+	(non private, non final instance methods can be overridden, access level should not reduce)
+	
+	
+	Object Class Methods Overriding
+	---------------------------------
+
+		public String toString()
+		public boolean equals(Object)
+		public int hashCode() 
+		
+	Polymorphism
+	----------------------------
+		static polymorphism (Compile Time Polymorphism) (static binding)....Overloading
+		dynamic polymorphism (Run Time Polymorphism) (Dynamic Binding)......Overriding
+
+
+
+	Immutable Object
+	----------------------
+
+	Built In Classes (Pre defined Classes)
+
+	String class
+	------------ 
+		Immutable Class
+
+	StringBuffer, StringBuilder
+	------------
+		Mutable Class
+		append
+		insert
+		delete
+
+	Wrapper Classes
+	-------------------
+		byte  -   Byte
+		short -   Short
+		int   -   Integer
+		long  -   Long
+		char  -   Character
+		float -   Float
+		double-   Double
+		boolean-  Boolean
+		void   -  Void
+
+		Auto Boxing
+		Auto UnBoxing
+		
+		Wrapper Classes
+	-------------------
+		byte  -   Byte
+		short -   Short
+		int   -   Integer
+		long  -   Long
+		char  -   Character
+		float -   Float
+		double-   Double
+		boolean-  Boolean
+		void   -  Void
+
+		All Wrapper classes are immutable.
+
+		Auto Boxing
+		Auto UnBoxing
+
+
+	Abstract Method, Abstract Class
+	-------------------------------
+
+	Interface
+	-------------
+	Rules
+	1.	A class can implement more than one interface.
+	2.	A class can extend one class and implement multiple interfaces (extends should come first and then implements)
+	3.	Interface can inherit another interface using extends Keyword.
+	4.	A class can inherit interface(s), but interface cannot inherit a class
+	5.	Interface has no constructor.
+	6.	If an interface is empty, it is called marker interface
+
+	Built In Interface
+	-----------------------
+		Comparable (java.lang)
+		Comparator (java.util)
